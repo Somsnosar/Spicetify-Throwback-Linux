@@ -66,6 +66,13 @@ aside[aria-label="Queue"] ul > div:nth-child(even) > li {
         border-radius: 10px;
     }
 
+    // spotify sets color on the buttons themselves
+    button,
+    button * {
+        color: #373737 !important;
+        text-shadow: 0 1px #C0C0C0;
+    }
+
 
     button {
         @include svg-icon;

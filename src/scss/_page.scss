@@ -33,8 +33,15 @@ section[data-test-uri^="spotify:artist:"] .main-rootlist-wrapper > [role="presen
     border-radius: 0;
 }
 
-.main-entityHeader-container {
+.main-entityHeader-shadow {
     box-shadow: 0 0 15px 4px rgba(var(--spice-rgb-shadow), 0.65);
+}
+
+/* flatten tinted action bar bg */
+.playlist-playlist-actionBarBackground-background,
+.main-actionBarBackground-background {
+    background-color: #373737 !important;
+    background-image: none !important;
 }
 
 /* Page - Padding Reset */
