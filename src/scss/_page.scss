@@ -11,14 +11,14 @@ section[data-testid="album-page"] .main-trackList-trackListRow, .main-rootlist-w
 /* Track List > Track Item Background */
 section[data-testid="album-page"] .main-rootlist-wrapper > [role="presentation"] > [role="presentation"]:nth-child(odd) .main-trackList-trackListRow,
 section[data-testid="playlist-page"] .main-rootlist-wrapper > [role="presentation"] > div:nth-child(odd) .main-trackList-trackListRow,
-section[data-testid="artist-page"] .main-rootlist-wrapper > [role="presentation"] > div:nth-child(odd) .main-trackList-trackListRow
+section[data-test-uri^="spotify:artist:"] .main-rootlist-wrapper > [role="presentation"] > div:nth-child(odd) .main-trackList-trackListRow
 {
     background-color: #373737;
 }
 
 section[data-testid="album-page"] .main-rootlist-wrapper > [role="presentation"] > [role="presentation"]:nth-child(even) .main-trackList-trackListRow,
 section[data-testid="playlist-page"] .main-rootlist-wrapper > [role="presentation"] > div:nth-child(even) .main-trackList-trackListRow,
-section[data-testid="artist-page"] .main-rootlist-wrapper > [role="presentation"] > div:nth-child(even) .main-trackList-trackListRow
+section[data-test-uri^="spotify:artist:"] .main-rootlist-wrapper > [role="presentation"] > div:nth-child(even) .main-trackList-trackListRow
 {
     background-color: #313131;
 }
@@ -33,7 +33,7 @@ section[data-testid="artist-page"] .main-rootlist-wrapper > [role="presentation"
     border-radius: 0;
 }
 
-.main-entityHeader-shadow {
+.main-entityHeader-container {
     box-shadow: 0 0 15px 4px rgba(var(--spice-rgb-shadow), 0.65);
 }
 
@@ -57,7 +57,7 @@ section[data-testid="artist-page"] .main-rootlist-wrapper > [role="presentation"
 main > section[data-testid="album-page"] > .contentSpacing,
 main > section[data-testid="playlist-page"] > .contentSpacing,
 main > section[data-testid="playlist-page"] .playlist-playlist-playlistContent > .main-useDropTarget-base .contentSpacing,
-main > section[data-testid="artist-page"] > section.contentSpacing:has(.artist-artistDiscography-topBar)
+main > section[data-test-uri^="spotify:artist:"] > section.contentSpacing:has(.artist-artistDiscography-topBar)
 {
     background-color: #373737;
     background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
@@ -104,7 +104,7 @@ main > section[data-testid="album-page"] .contentSpacing > div:nth-child(2) {
     justify-content: space-around;
 }
 
-.main-shelf-header h2,
+section.main-shelf-shelf > div:first-child h2,
 .main-gridContainer-gridContainer h2
 {
     font-size: 14px;
@@ -120,35 +120,35 @@ main > section[data-testid="album-page"] .contentSpacing > div:nth-child(2) {
 }
 
 /* Artist Page > Liked Songs/Artist Pick Container (not always visible) */
-section[data-testid="artist-page"] .contentSpacing > div > .main-gridContainer-gridContainer > div:nth-child(2) {
+section[data-test-uri^="spotify:artist:"] .contentSpacing > div > .main-gridContainer-gridContainer > div:nth-child(2) {
     gap: 0;
     margin-bottom: 12px;
 }
 
 /* Artist Page > Liked Songs/Artist Pick Containers (not always visible) */
-section[data-testid="artist-page"] .contentSpacing > div > .main-gridContainer-gridContainer > div:nth-child(2) > div {
+section[data-test-uri^="spotify:artist:"] .contentSpacing > div > .main-gridContainer-gridContainer > div:nth-child(2) > div {
     width: 50%
 }
 
 /* Artist Page > Liked Songs/Artist Pick Container Headers */
-section[data-testid="artist-page"] .contentSpacing > div > .main-gridContainer-gridContainer > div:nth-child(2) h2 {
+section[data-test-uri^="spotify:artist:"] .contentSpacing > div > .main-gridContainer-gridContainer > div:nth-child(2) h2 {
     padding: 4px 10px;
     background-image: linear-gradient(#606060, 20%, #505050, 80%, #454545);
     border-bottom: 1px solid #303030;
 }
 
 /* Artist Page > Liked Songs/Artist Pick Containers > Padding */
-section[data-testid="artist-page"] .contentSpacing > div > .main-gridContainer-gridContainer > div:nth-child(2) > div > div {
+section[data-test-uri^="spotify:artist:"] .contentSpacing > div > .main-gridContainer-gridContainer > div:nth-child(2) > div > div {
     padding: 0 var(--content-spacing);
 }
 
 /* Artist Page > Popular Songs Container Margin */
-section[data-testid="artist-page"] .contentSpacing > div > .main-gridContainer-gridContainer {
+section[data-test-uri^="spotify:artist:"] .contentSpacing > div > .main-gridContainer-gridContainer {
     margin-bottom: 10px;
 }
 
 /* Artist Page > Shelves > Background */
-section[data-testid="artist-page"] > div > div:nth-child(2) > .contentSpacing {
+section[data-test-uri^="spotify:artist:"] > div > div:nth-child(2) > .contentSpacing {
     padding: 0;
     background: #373737;
 }
@@ -212,7 +212,7 @@ section[data-testid="artist-page"] > div > div:nth-child(2) > .contentSpacing {
 /* Browse View > Background Texture */
 #searchPage,
 /* Artist Page > Background Texture */
-section[data-testid="artist-page"] > div > div:nth-child(2) > .contentSpacing {
+section[data-test-uri^="spotify:artist:"] > div > div:nth-child(2) > .contentSpacing {
     background-color: #373737;
     background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
 }
@@ -240,7 +240,7 @@ section[data-testid="artist-page"] > div > div:nth-child(2) > .contentSpacing {
 }
 
 /* Main View > Shelf List Details > Header Margin */
-section.main-shelf-shelf > .main-shelf-header {
+section.main-shelf-shelf > div:first-child {
     margin-bottom: 0;
 }
 

@@ -1,7 +1,8 @@
 :root {
-  --encore-body-font-stack: "Segoe UI", var(--fallback-fonts, sans-serif);
-  --encore-title-font-stack: "Helvetica", var(--fallback-fonts, sans-serif);
-  --encore-variable-font-stack: "Segoe UI", var(--fallback-fonts, sans-serif);
+  /* segoe ui win only linux fallbacks */
+  --encore-body-font-stack: "Segoe UI", "Noto Sans", "Cantarell", "DejaVu Sans", "Liberation Sans", arial, var(--fallback-fonts, sans-serif);
+  --encore-title-font-stack: "Helvetica", "Liberation Sans", "Nimbus Sans", arial, var(--fallback-fonts, sans-serif);
+  --encore-variable-font-stack: "Segoe UI", "Noto Sans", "Cantarell", "DejaVu Sans", "Liberation Sans", arial, var(--fallback-fonts, sans-serif);
   --encore-corner-radius-smaller: 0px;
   --encore-corner-radius-base: 0px;
   --encore-corner-radius-larger: 0px;
